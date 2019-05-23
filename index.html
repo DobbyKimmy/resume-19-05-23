@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JRH Resume</title>
+    <link rel="stylesheet" href="./loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="//at.alicdn.com/t/font_1128654_mkrsfkjhwq7.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!--loading-->
+    <div id="loading" class="loadingWrapper  active">
+        <div class="loading"></div>
+    </div>
+    <!--导航栏-->
+    <div id="topNavBar" class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a class="logo" href="#">
+                <span class="rs">RS</span><span class="card">card</span>
+            </a>
+            <nav>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#about">关于</a>
+                    </li>
+                    <li>
+                        <a href="#skills">技能</a>
+                    </li>
+                    <li>
+                        <a href="#works">作品</a>
+                        <ul>
+                            <li>作品1</li>
+                            <li>作品2</li>
+                            <li>作品3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">博客</a>
+                        <ul>
+                            <li>博客1</li>
+                            <li>博客2</li>
+                            <li>博客3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">日历</a>
+                    </li>
+                    <li>
+                        <a href="#">联系方式</a>
+                    </li>
+                    <li>
+                        <a href="#">其他</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--banner图-->
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div special id="about" class="userCard">
+            <div class="pictureAndText clearfix">
+                <div class="picture"><img src="./img/avatar.jpg" alt="头像" width="299" height="347"></div>
+                <div class="text">
+                        <span class="welcome">Hello
+                            <span class="triangle"></span>
+                        </span>
+                        <h1>金润恒</h1>
+                        <p>前端开发工程师</p>
+                        <hr>
+                        <dl>
+                            <dt>年龄</dt>
+                            <dd>26</dd>
+                            <dt>所在城市</dt>
+                            <dd>深圳</dd>
+                            <dt>邮箱</dt>
+                            <dd>jinrunheng@foxmail.com</dd>
+                            <dt>手机</dt>
+                            <dd>15526787357</dd>
+                        </dl>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="https://www.jianshu.com/u/c8013e366bb3">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-CN_jianshu"></use>
+                    </svg>
+                </a>
+                <a href="https://github.com/DobbyKimmy">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="https://www.zhihu.com/people/jin-run-heng/activities">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/pywgPe1RotDJjiN">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                </a>
+            </footer>
+        </div>
+        <div class="wrapperDownloadResume">
+            <a class="downloadResume" href="#" target="_blank" download>下载PDF简历</a>
+        </div>
+        <p class="selfIntroduction">
+            金润恒 1993年12月18日生<br>
+            资深段子手
+        </p>
+    </main>
+    <section special id="skills" class="skills">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <li>
+                <h3>HTML5 &amp; CSS3</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>JavaScript</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>jQuery</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Vue</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>React</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>HTTP</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section special id="works" class="portfolio">
+        <h2>作品集</h2>
+        <!--变成轮播-->
+        <div id="mySlides">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img src="./projectImg/nav-demo.JPG" class="swiper-slide"/>
+                    <img src="./projectImg/canvas-demo.jpg" class="swiper-slide"/>
+                    <img src="./projectImg/slide-demo.JPG" class="swiper-slide"/>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+
+                <!-- 如果需要滚动条 -->
+                <!--<div class="swiper-scrollbar"></div>-->
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </section>
+    <section class="message">
+        <h2>留言</h2>
+        <ol id="messagesList"></ol>
+        <form id="postMessage" style="width: 700px;margin: 50px auto;">
+            <label for="">姓名</label>
+            <input type="text" name="name">
+            <label for="">评论</label>
+            <input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+
+    </section>
+    <!--tween动画库-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js"></script>
+    <!--模块化-->
+    <script src="./js/init-swiper.js"></script>
+    <script src="./js/auto-slide-up.js"></script>
+    <script src="./js/sticky-topbar.js"></script>
+    <script src="./js/smothly-naviagtion.js"></script>
+    <script src="./js/message.js"></script>
+    <script>
+        // loading动画
+        window.setTimeout(function () {
+            loading.classList.remove('active')
+        },1000)
+    </script>
+</body>
+</html>
